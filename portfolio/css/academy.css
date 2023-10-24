@@ -1,0 +1,107 @@
+.academy-container {
+  background-color: #141414;
+}
+
+.academy {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.academy .subtitle {
+  color: #000000;
+}
+
+.academy-text {
+  font-size: 1.5rem;
+  line-height: 1.33rem;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.academy-text strong {
+  color: #ffffff;
+}
+
+.academy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.academy-item {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.academy-type {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.academy-course {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  color: #ffffff;
+  position: relative;
+  flex: 1;
+}
+
+.academy-course::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -24px;
+}
+
+.academy-institution {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.courses {
+  margin-bottom: 60px;
+}
+
+.academy-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.academy-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.courses h3::before {
+  background: url("../assets/cursos.svg") no-repeat center;
+}
+
+.languages h3::before {
+  background: url("../assets/idiomas.svg") no-repeat center;
+}
