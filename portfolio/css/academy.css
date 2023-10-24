@@ -1,10 +1,22 @@
 .academy-container {
   background-color: #141414;
+  position: relative;
+}
+
+.academy-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../assets/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .academy {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -13,6 +25,7 @@
 
 .academy .subtitle {
   color: #000000;
+  max-width: 5ch;
 }
 
 .academy-text {
@@ -104,4 +117,42 @@
 
 .languages h3::before {
   background: url("../assets/idiomas.svg") no-repeat center;
+}
+
+.academy-extra li {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.academy-extra li span {
+  color: #8f8f8f;
+}
+
+.courses li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .academy {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .academy .subtitle {
+    color: #ffffff;
+  }
+
+  .academy-text {
+    font-size: 1.25rem;
+  }
+
+  .academy-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
