@@ -4,17 +4,11 @@
 
 .bikes-list h2 {
   margin-bottom: 40px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .bikes-list ul {
   display: flex;
   gap: 40px;
-  padding: 0 20px;
-  max-width: 1400px;
-  margin: 0 auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
