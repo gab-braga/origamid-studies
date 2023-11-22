@@ -46,6 +46,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .companies li {
+    padding: 20px;
+  }
+
   .companies li:nth-child(n + 3) {
     border-top: 2px solid var(--c-02);
   }
