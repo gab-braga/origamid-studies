@@ -6,6 +6,7 @@
 }
 
 .button {
+  max-width: max-content;
   padding: 16px 32px;
   display: inline-block;
   background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
@@ -18,6 +19,15 @@
 
 .button:hover {
   background: linear-gradient(180deg, #ffb60d 0%, #e59317 100%);
+}
+
+.button.secondary {
+  background: var(--c-10);
+  color: var(--c-02);
+}
+
+.button.secondary:hover {
+  background-color: var(--c-09);
 }
 
 .link {
