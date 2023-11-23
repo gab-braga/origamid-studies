@@ -16,6 +16,9 @@
   text-transform: uppercase;
   color: var(--c-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
@@ -29,6 +32,20 @@
 
 .button.secondary:hover {
   background-color: var(--c-09);
+}
+
+.button.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../assets/icones/seta.svg") no-repeat;
+  transition: transform 0.2s;
+}
+
+.button.arrow:hover::after {
+  transform: translateX(4px);
 }
 
 .link {
