@@ -2,6 +2,10 @@
   background-color: var(--c-11);
 }
 
+#insurance .insurance {
+  padding-top: 0;
+}
+
 .insurance {
   padding: 60px 20px;
   display: grid;
