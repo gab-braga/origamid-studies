@@ -7,6 +7,7 @@
 @import "./util/colors.css";
 @import "./util/typography.css";
 @import "./util/components.css";
+@import "./util/form.css";
 
 /* home */
 @import "./home/intro.css";
@@ -26,6 +27,10 @@
 @import "./insurance/insurance.css";
 @import "./insurance/benefits.css";
 @import "./insurance/faq.css";
+
+/* contact */
+@import "./contact/contact.css";
+@import "./contact/store.css";
 
 /* terms */
 @import "./terms/terms.css";
