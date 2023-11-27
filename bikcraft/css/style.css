@@ -33,4 +33,7 @@
 @import "./contact/stores.css";
 
 /* terms */
+@import "./budget/budget.css";
+
+/* terms */
 @import "./terms/terms.css";
