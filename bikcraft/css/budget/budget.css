@@ -122,3 +122,54 @@
   display: grid;
   gap: 20px;
 }
+
+.budget-details {
+  display: none;
+  background-color: var(--c-00);
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.budget-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.budget-details li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.budget-product input:checked + label + .budget-details {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .budget-product,
+  .budget-data {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-data {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .budget-product {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .budget-product {
+    grid-template-columns: 1fr;
+  }
+}
