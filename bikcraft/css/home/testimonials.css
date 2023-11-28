@@ -1,7 +1,8 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--c-p1);
+  background: var(--c-p1) url("../../assets/dec/bottom-right-p.svg") no-repeat
+    bottom 40px right 40px;
   overflow: hidden;
 }
 
@@ -40,6 +41,12 @@
   font-size: 5rem;
   color: var(--c-p2);
   position: absolute;
+}
+
+@media (min-width: 1200px) {
+  .testimonials img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {

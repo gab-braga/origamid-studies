@@ -33,11 +33,12 @@
 
 .budget-product {
   border-radius: 4px 0 0 4px;
-  background-color: var(--c-12);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: start;
   gap: 20px;
+  background: var(--c-12) url("../../assets/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
 }
 
 .budget-product input {
@@ -114,7 +115,8 @@
 
 .budget-data {
   border-radius: 0 4px 4px 0;
-  background-color: var(--c-00);
+  background: var(--c-00) url("../../assets/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
 }
 
 #bikcraft:checked ~ #budget-bikcraft,
@@ -165,6 +167,7 @@
 
   .budget-product {
     border-radius: 4px 4px 0 0;
+    background: var(--c-12);
   }
 }
 
