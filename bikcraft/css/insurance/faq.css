@@ -51,13 +51,16 @@
 }
 
 .faq dd {
-  display: none;
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
 }
 
-.faq dd.active {
+.js .faq dd {
+  display: none;
+}
+
+.js .faq dd.active {
   display: block;
 }
 
