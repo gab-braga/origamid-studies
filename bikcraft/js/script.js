@@ -49,3 +49,8 @@ function verifyWidthScreen() {
   const media = window.matchMedia("(min-width: 1000px)");
   return media.matches;
 }
+
+// animation
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

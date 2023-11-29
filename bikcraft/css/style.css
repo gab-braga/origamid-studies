@@ -8,6 +8,7 @@
 @import "./util/typography.css";
 @import "./util/components.css";
 @import "./util/form.css";
+@import "./util/simple-anime.css";
 
 /* home */
 @import "./home/intro.css";
