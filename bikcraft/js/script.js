@@ -31,3 +31,21 @@ function handleClickQuestion(event) {
   const active = response.classList.contains("active");
   question.setAttribute("aria-expanded", String(active));
 }
+
+// gallery imagens bikes
+const gallery = document.querySelectorAll(".bike-image img");
+gallery.forEach(addEventGallery);
+function addEventGallery(image) {
+  image.addEventListener("click", handleClickGallery);
+}
+const container = document.querySelector(".bike-image");
+function handleClickGallery(event) {
+  if (verifyWidthScreen()) {
+    const image = event.currentTarget;
+    container.prepend(image);
+  }
+}
+function verifyWidthScreen() {
+  const media = window.matchMedia("(min-width: 1000px)");
+  return media.matches;
+}
